@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divers Toolbox</title>
+    <link rel="stylesheet" href="CSS/ukol1.css">
+    <!-- Načtení knihovny Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="#courses">Kurzy</a></li>
+                <li><a href="#contact">Přihláška</a></li>
+                <li><a href="#calculator">Kalkulátor zátěže</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="courses" class="courses">
+        <h2>Potápěčské kurzy</h2>
+        <div class="course-card-container">
+            <!-- Zde můžete přidat obsah kurzů -->
+            <div class="course-card">
+                <img src="IMGS/OWD.webp" alt="Začátečnický kurz" class="course-image">
+                <h3>Začátečnický kurz</h3>
+                <p>Naučte se základy potápění.</p>
+                <p class="course-price">Cena: 6.000 Kč</p>
+                <button class="button1">Přihlásit</button>
+                <!-- Kontejner pro bubliny -->
+                <div class="bubbles"></div>
+            </div>
+            <div class="course-card">
+                <img src="IMGS/OWD.webp" alt="Začátečnický kurz" class="course-image">
+                <h3>Začátečnický kurz</h3>
+                <p>Naučte se základy potápění.</p>
+                <p class="course-price">Cena: 6.000 Kč</p>
+                <button class="button1">Přihlásit</button>
+                <!-- Kontejner pro bubliny -->
+                <div class="bubbles"></div>
+            </div>
+            <div class="course-card">
+                <img src="IMGS/OWD.webp" alt="Začátečnický kurz" class="course-image">
+                <h3>Začátečnický kurz</h3>
+                <p>Naučte se základy potápění.</p>
+                <p class="course-price">Cena: 6.000 Kč</p>
+                <button class="button1">Přihlásit</button>
+                <!-- Kontejner pro bubliny -->
+                <div class="bubbles"></div>
+            </div>
+            <div class="course-card">
+                <img src="IMGS/OWD.webp" alt="Začátečnický kurz" class="course-image">
+                <h3>Začátečnický kurz</h3>
+                <p>Naučte se základy potápění.</p>
+                <p class="course-price">Cena: 6.000 Kč</p>
+                <button class="button1">Přihlásit</button>
+                <!-- Kontejner pro bubliny -->
+                <div class="bubbles"></div>
+            </div>
+            <div class="course-card">
+                <img src="IMGS/OWD.webp" alt="Začátečnický kurz" class="course-image">
+                <h3>Začátečnický kurz</h3>
+                <p>Naučte se základy potápění.</p>
+                <p class="course-price">Cena: 6.000 Kč</p>
+                <button class="button1">Přihlásit</button>
+                <!-- Kontejner pro bubliny -->
+                <div class="bubbles"></div>
+            </div>
+            <div class="course-card">
+                <img src="IMGS/OWD.webp" alt="Začátečnický kurz" class="course-image">
+                <h3>Začátečnický kurz</h3>
+                <p>Naučte se základy potápění.</p>
+                <p class="course-price">Cena: 6.000 Kč</p>
+                <button class="button1">Přihlásit</button>
+                <!-- Kontejner pro bubliny -->
+                <div class="bubbles"></div>
+            </div>
+            <!-- Další karty kurzů podle potřeby -->
+        </div>
+    </section>     
+
+    <div class="page_heading"><h1><mark>Divers Toolbox</mark></h1></div>
+
+    <section id="contact" class="forms-container">
+        <!-- Kalkulátor potápěčské zátěže -->
+        <div class="contact-form">
+            <h2>Přihláška na kurz</h2>
+            <form>
+                <label for="name">Jméno:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="course">Vyberte kurz:</label>
+                <select id="course" name="course">
+                    <option value="beginner">Začátečnický kurz</option>
+                    <option value="advanced">Pokročilý kurz</option>
+                    <option value="cave">Potápění v jeskyních</option>
+                </select>
+                <button type="submit">Přihlásit se</button>
+            </form>
+        </div>
+
+        <!-- Kalkulátor potápěčské zátěže -->
+        <div class="weight-calculator">
+            <h2>Kalkulátor potápěčské zátěže</h2>
+            <form id="weightForm">
+                <label for="weight">Vaše váha (kg):</label>
+                <input type="number" id="weight" name="weight" required>
+        
+                <label for="height">Vaše výška (cm):</label>
+                <input type="number" id="height" name="height" required>
+        
+                <label for="suit">Typ obleku:</label>
+                <select id="suit" name="suit" required>
+                    <option value="3mm">Neopren 3mm</option>
+                    <option value="5mm">Neopren 5mm</option>
+                    <option value="7mm">Neopren 7mm</option>
+                    <option value="dry">Suchý oblek</option>
+                </select>
+        
+                <label for="tank">Typ lahve:</label>
+                <select id="tank" name="tank" required>
+                    <option value="aluminum">Hliníková 12L</option>
+                    <option value="steel">Ocelová 12L</option>
+                </select>
+        
+                      
+                <button type="submit">Spočítat zátěž</button>
+            </form>
+        
+            <div id="result"></div>
+        </div>
+    </section>
+
+    <!-- Plánování ponoru -->
+    <section id="dive-calculator" class="forms-container">
+        <div class="form-and-chart">
+            <div class="calculator">
+                <h2>Plánování ponoru</h2>
+                <form id="diveForm">
+                    <label for="depth">Hloubka (m):</label>
+                    <input type="number" id="depth" name="depth" required>
+                
+                    <label for="time">Čas v hloubce (min):</label>
+                    <input type="number" id="time" name="time" required>
+                
+                    <label for="gas">Typ plynu:</label>
+                    <select id="gas" name="gas" required>
+                        <option value="air">Vzduch</option>
+                        <option value="nitrox32">Nitrox 32</option>
+                        <option value="nitrox36">Nitrox 36</option>
+                    </select>
+                    <label for="gfLow">GF Low (0-1):</label>
+                    <input type="number" id="gfLow" name="gfLow" step="0.1" min="0" max="1" required>
+
+                    <label for="gfHigh">GF High (0-1):</label>
+                    <input type="number" id="gfHigh" name="gfHigh" step="0.1" min="0" max="1" required>
+
+                
+                    <!-- Přidáme průměrnou spotřebu při 10 m -->
+                    <label for="airConsumption">Průměrná spotřeba vzduchu při 10 m (litry/min):</label>
+                    <input type="number" id="airConsumption" name="airConsumption" required>
+                
+                    <!-- Přidáme objem lahve -->
+                    <label for="tankVolume">Objem lahve (litry):</label>
+                    <input type="number" id="tankVolume" name="tankVolume" required>
+                
+                    <!-- Přidáme počáteční tlak v lahvi -->
+                    <label for="startPressure">Počáteční tlak v lahvi (bary):</label>
+                    <input type="number" id="startPressure" name="startPressure" required>
+                
+                    <button type="submit">Vypočítat</button>
+                </form>
+            </div>
+            <div id="chartContainer" style="width: 80%; height: 400px; margin-top: 50px;">
+                <canvas id="diveChart"></canvas>            
+            </div> <!-- Uzavření divu -->
+           
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Divers Toolbox</p>
+    </footer>
+    <!-- Odkaz na JavaScriptový soubor -->
+    <script src="JS/ukol1.js"></script>
+</body>
+</html>

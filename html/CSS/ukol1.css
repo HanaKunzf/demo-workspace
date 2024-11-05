@@ -1,0 +1,315 @@
+/* Základní styly */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #423e37;
+    line-height: 1.6;
+}
+
+mark {
+    background-color: transparent;
+    color: #51a3a3;
+    position: relative;
+}
+
+mark::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #e3b23c;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+mark:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+/* Hlavní menu */
+header {
+    background-color: #51a3a3;
+    padding: 10px 0;
+}
+
+.main-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.main-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: background 0.3s;
+}
+
+.main-menu li a:hover {
+    background-color: #e3b23c;
+    border-radius: 5px;
+}
+
+/* Nadpis stránky */
+.page_heading h1 {
+    text-align: center;
+    color: #51a3a3;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px 0;
+}
+
+/* Sekce kurzů */
+.courses {
+    padding: 20px;
+    background-color: #fff;
+}
+h1 {
+    color: #51a3a3;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+
+h2 {
+    color: #423e37;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.course-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    max-width: 80vw;
+}
+
+.course-card {
+    position: relative;
+    background-color: #fff;
+    border: 2px solid #51a3a3;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 1.5s, box-shadow 0.5s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    background-color: #51a3a369;
+    color: #f9f9f9;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.course-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.course-price {
+    color: #e3b23c;
+    font-weight: bold;
+}
+
+.button1 {
+    background-color: #51a3a3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button1:hover {
+    background-color: #e3b23c;
+}
+
+/* Sekce formulářů */
+.forms-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+.forms-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+  /*  max-width: 1200px;*/
+    margin-bottom: 30px;
+}
+
+.contact-form, .weight-calculator {
+    background-color: #fff;
+    border: 2px solid #51a3a3;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    background-color: #51a3a3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #e3b23c;
+}
+
+/* Kalkulátor zátěže */
+#calculator {
+    background-color: #fff;
+    border: 2px solid #51a3a3;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+
+
+}
+
+.form-and-chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.calculator {
+    flex-basis: 30%;
+    max-width: 30%;
+}
+#dive-calculator {
+    background-color: #fff;
+    border: 2px solid #51a3a3;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 80vw;
+    margin: 20px auto;
+
+    
+}
+#chartContainer {
+    flex-basis: 60%;
+    max-width: 60%;
+    height: auto;
+    text-align: center;
+}
+/*#chartContainer {
+    margin-top: 30px;
+    text-align: center;
+}
+*/
+#diveChart {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Bubliny */
+.bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none; /* Zamezí interakci s bublinami */
+}
+
+.bubbles::before, .bubbles::after {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Umístí bubliny na začátek karty */
+    width: 20px; 
+    height: 20px;
+    background-color: rgba(34, 47, 82, 0.705); /* Zvýšení opacity pro lepší viditelnost */
+    border-color: #51a3a3;
+    border-width: 1px;
+    border-radius: 50%;
+    animation: bubble-animation 5s infinite ease-in-out; /* Zkrácení doby animace */
+}
+
+.bubbles::before {
+    left: 20%;
+    animation-duration: 5s;
+}
+
+.bubbles::after {
+    left: 80%;
+    animation-duration: 4.5s;
+}
+
+@keyframes bubble-animation {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-300%) scale(2.5); /* Zvýšení výšky a velikosti bublin */
+        opacity: 0;
+    }
+}
+
+
+/* Styl animace při najetí myší na kartu kurzu */
+.course-card:hover .bubbles::before,
+.course-card:hover .bubbles::after {
+    animation-play-state: running; /* Spustí animaci */
+}
+
+
+/* Footer */
+footer {
+    background-color: #51a3a3;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}

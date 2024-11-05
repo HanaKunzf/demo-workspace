@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Pokusna stranka
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="CSS/pokus.css"> -->
+
+    <style>
+      html {
+        font-size: 16px;
+      }
+      * {
+        font-family: Arial, sans-serif;
+      }
+      h1, h2 {
+        font-family: Georgia, serif;
+        /*
+        color: red;
+        color: rgb(144, 79, 79);
+        color: #ff0;
+        color: #5af;
+        color: #470ff0;
+        color: rgb(255, 0, 0);
+        */
+        color: #279132;
+        background-color: firebrick;
+      }
+      h1 {
+        font-size: 2.5rem;
+        font-weight: normal;
+        font-style: italic;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      nav {
+        font-weight: 700;
+      }
+      #section2 h2 {
+        color: yellow;
+      }
+      h2 {
+        color: white;
+      }
+      .white-headline {
+        color: white;
+      }
+      figure {
+        margin: 0;
+      }
+      img {
+        max-width: 100%;
+      }
+      figcaption {
+        font-style: italic;
+        font-size: 0.8rem;
+        text-align: center;
+      }
+      table {
+        width: 100%;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      /*th {
+        background-color: white;
+      }*/
+      td {
+        border: 1px solid red;
+      }
+      tbody tr:nth-child(2n+1) {
+        background-color: lightgray;
+      }
+      input:focus {
+        border-color: orange;
+        border-width: 1rem;
+      }
+      input:required {
+        border-color: red;
+      }
+      #section1 > p {
+        color: blue;
+      }
+      #section1 h2 ~ p {
+        font-size: 1.2rem;
+      }
+      #section1 h2 + p {
+        text-decoration: underline;
+      }
+      input[type="email"] {
+        background-color: lightgray;
+      }
+      input[type*="e"] {
+        border-style: dashed;
+      }
+      a[href^="http"] {
+        color: red;
+      }
+      a[href^="http"]::after {
+        content: " (external link)";
+      }
+      a[href$=".pdf"]::before {
+        content: "(PDF) ";
+      }
+      .container 
+      {
+       display: flex;
+       flex-wrap:wrap; 
+       gap: 20px;
+       width: 100%;    
+       justify-content: flex-start; 
+       align-items: stretch;          
+      }
+
+      .box {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 25px;
+      width: 100px;
+      
+      display: flex;
+      justify-content: center;
+      
+      
+      }
+
+      .box1 {
+      background-color: #6b3fb1;  
+      }
+        .box1_1 {
+        background-color: #279132;  
+
+        }
+      .box2 {
+      background-color: #69183a;  
+      }
+      .box3 {
+      background-color: #cee02c; 
+      width: 200px; 
+      height: 300px;
+      }
+      .box4 {
+      background-color: #09010c;  
+      }
+      .box5 {
+      background-color: #231047;  
+      }
+      .box6 {
+      background-color: #1c132b;  
+      }
+    </style>
+
+</head>
+<body>
+    <header>
+            <nav>
+              <ul>
+                <li> <a href="#">recepty </a> </li>
+                <li> <a href="#">recepty </a> </li>
+                <li> <a href="#">recepty </a> </li>
+              </ul>
+            </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="box box1">Box 1
+          <div clas="box box1_1">
+           box 1_1
+          </div>
+          <div clas="box box1_2">
+            box 1_2
+           </div>
+           <div clas="box box1_3">
+            box 1_3
+           </div>
+        </div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+        <div class="box box5">Box 5</div>
+        <div class="box box6">Box 6</div>
+      </div>
+        <article>
+            <h1>Palačinky</h1>
+            <img width="250" src="IMGS/palacinky-s-dzemem-192251-677-508-nw.jpg" alt="obrazek palacinky">
+            <section>
+              <h2>
+                <b>
+                  Ingredience
+                </b>
+              </h2>
+              <table border="1">
+                <thead>
+                  <th>Ingredience</th><th>Množství</th><th>Jednotka</th>
+                </thead>
+                <tbody>
+                  <tr>
+                   <td>Vejce</td><td>2</td><td>ks</td>
+                  </tr>
+                   <td>Mléko</td><td>500</td><td>ml</td>      
+                  <tr>
+                   <td>Hladká mouka</td><td>100</td><td>g</td>
+                 </tbody>
+                 <tfoot>
+                  <td colspan=2><b> Počet porcí</b></td><td>5</td>
+                 </tfoot>
+               </table>
+            </section>
+            <section>
+              <h2>
+                <b>
+                  Postup
+                </b>
+              </h2>
+              <ol>
+                <li><h3>Těsto</h3></li>
+                  <ol>
+                    <li>Vezmeme si nádobu a šlehací metličku</li>
+                    <li>Přidáme do mísy všechny Ingredience</li>
+                    <li>Důkladně promícháme, aby v těstě nebyly žádné hrudky</li>
+                  </ol>
+                <li><h3>Smažení</h3></li>
+                  <ol>
+                    <li>Rozehřejeme olej na pánvi</li>
+                    <li>Naběračkou nabereme těsto a rovnoměrně rozprostřeme na pánev</li>
+                    <li>Smažíme z obou stran 1 -2 minuty</li>
+                  </ol>
+              </ol>
+              <p> <u><b>Lorem ipsum odor amet,</b></u> consectetuer adipiscing elit. Aptent enim platea ligula tristique quis. Congue justo amet condimentum lobortis, 
+                urna tincidunt urna congue. Nisi felis rutrum eu tellus fringilla ridiculus pretium litora. Praesent diam fringilla tellus auctor suscipit parturient. 
+                Elementum nisi commodo non mauris accumsan bibendum. <em>Nullam eleifend per sodales ullamcorper proin id velit egestas.</em> 
+                Mollis tempus blandit ac; vehicula mi gravida suscipit bibendum. Potenti porttitor interdum mus facilisis tristique vestibulum curae.
+              </p>
+              <hr>
+            </section>
+          </article>
+          <form action="#" method="post">
+            <fieldset>
+                <legend>Osobní informace</legend>
+                
+                <label for="name">Jméno</label>
+                <input type="text" id="name" name="user_name" required><br>
+                
+                <label>Pohlaví</label>
+                <input type="radio" id="man" name="sex" value="muž" required>
+                <label for="man">muž</label>
+                <input type="radio" id="woman" name="sex" value="žena" required>
+                <label for="woman">žena</label><br>
+        
+                <label for="birth">Datum narození</label><br>
+                <input type="date" id="birth" name="birth"><br>
+                
+                <label for="password">Heslo</label>
+                <input type="password" name="password" id="password" required><br>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Kontaktní informace</legend>
+                
+                <label for="street">Ulice a číslo domu</label>
+                <input type="text" id="street" name="street" required><br>
+                
+                <label for="city">Město</label>
+                <input type="text" id="city" name="city" required><br>
+                
+                <label for="country">Stát</label>
+                <select name="country" id="country">
+                    <optgroup label="Evropa">
+                        <option value="cz">Česká Republika</option>
+                        <option value="sk" selected>Slovensko</option>
+                        <option value="AT">Rakousko</option>
+                        <option value="HU">Maďarsko</option>
+                        <option value="DE">Německo</option>
+                    </optgroup>
+                    <optgroup label="Amerika">
+                        <option value="USA">Spojené Státy Americké</option>
+                        <option value="CAN">Kanada</option>
+                        <option value="BRA">Brazílie</option>
+                        <option value="MEX">Mexiko</option>
+                        <option value="EKV">Ekvádor</option>
+                    </optgroup>
+                </select><br>
+        
+                <label for="phone">Telefon</label>  
+                <input type="number" id="phone" name="phone"><br>
+        
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+                <label for="bio" id="bio" name="bio"> O mně</label>
+                <input type="text">
+            </fieldset>
+        
+            <fieldset>
+                <legend>Nahrání profilové fotografie</legend>
+                <label for="foto">Nahraj profilovou fotografii ve formátu .jpeg. Max. velikost 500kB</label><br>
+                <input type="file" accept=".jpeg" name="foto" id="foto"><br>
+            </fieldset>
+        
+            <fieldset>
+              <input type="hidden" value="validation_token" name="validation_token">
+              <input type="submit" value="Odeslat" name="submit" id="tlacitko">
+            </fieldset>
+        </form>
+    </main>
+ 
+
+
+
+    <footer>
+        <p class="footer_heading"> 
+            Kontakt
+        </p>
+        <address> Na Návsi 459,
+            <br> Beroun 
+        </address>
+        <p>e-mail:
+            <a href="mailto: kunzfeldova.hana@gmail.com"> kunzfeldova.hana@gmail.com</a>
+        </p>
+        <p>Telefon:
+            <a href="tel:+420774635599"> +420 774 635 599</a>
+        </p>
+    </footer>
+</body>
+
+
+
+
+
+
+
+
+
+</html>
